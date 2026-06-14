@@ -6,7 +6,7 @@ import { componentTagger } from "lovable-tagger";
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => ({
   // Add this 'base' property for GitHub Pages deployment
-  base: "/", // 👈 **IMPORTANT: Replace 'your-repo-name' with your GitHub repository name**
+  base: "/gati_portfolio/",
 
   server: {
     host: "::",
