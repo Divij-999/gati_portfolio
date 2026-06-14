@@ -1,52 +1,49 @@
 import { Card, CardContent, CardHeader, CardTitle } from "@/components/ui/card";
 import { Button } from "@/components/ui/button";
 import { Badge } from "@/components/ui/badge";
-import { 
-  Brain, 
-  Code, 
-  Pen, 
-  MapPin, 
-  Clock, 
-  Heart, 
-  Camera, 
-  Linkedin, 
-  Github, 
-  Instagram 
+import {
+  Brain,
+  Code,
+  Sprout,
+  Clock,
+  Heart,
+  Compass,
+  Linkedin,
+  Github,
 } from "lucide-react";
-import { Link } from "react-router-dom";
-
 
 const About = () => {
-  // A combined list of your technical and creative interests
   const interests = [
-    "Artificial Intelligence",
-    "Creative Writing",
-    "Large Language Models",
-    "Photography",
-    "Full-Stack Development",
-    "Storytelling",
-    "Software Architecture",
-    "Visual Arts",
-    "Human Connection",
+    "Software Development",
+    "Python",
+    "Problem Solving",
+    "Web Development",
+    "Open Source",
+    "Algorithms",
+    "Learning by Building",
+    "Clean Code",
+    "Computer Science",
   ];
 
-  // New, merged values that apply to both your tech and creative work
   const values = [
     {
       icon: Brain,
-      title: "Analytical Creativity",
-      description: "Fusing logical problem-solving from engineering with the expressive, out-of-the-box thinking from the arts."
+      title: "Curiosity First",
+      description:
+        "I love understanding how things work under the hood — that curiosity drives most of what I build and learn.",
     },
     {
       icon: Heart,
-      title: "Human-Centric Storytelling",
-      description: "Whether in code or a photograph, my goal is to create something that connects with and impacts people."
+      title: "Build with Care",
+      description:
+        "Whether it's a tiny script or a full project, I believe in writing it cleanly, thoughtfully, and with intent.",
     },
     {
-      icon: Pen,
-      title: "Purposeful Craft",
-      description: "A deep belief in building things—be it software or a story—with intention, quality, and a clear purpose."
-    }
+      icon: Sprout,
+      title: "Always Growing",
+      description:
+        "Every project is a chance to learn something new. Progress matters more than perfection.",
+    },
   ];
 
   return (
@@ -56,40 +53,41 @@ const About = () => {
         <div className="max-w-4xl mx-auto text-center">
           <div className="animate-fade-in-up">
             <h1 className="text-4xl md:text-5xl font-bold mb-6">
-              My Journey in <span className="gradient-text">Code & Creativity</span>
+              A Little About <span className="gradient-text">Me</span>
             </h1>
             <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-              An AI Engineer who sees the world through a developer's logic and a photographer's lens. Based in Ahmedabad, I build intelligent systems and tell compelling stories.
+              A computer science student and developer who learns by building. Curious by nature, patient by practice.
             </p>
           </div>
         </div>
       </section>
 
-      {/* Bio Section - Rewritten to tell a unified story */}
+      {/* Bio Section */}
       <section className="py-16 px-4 sm:px-6 lg:px-8">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
             <div className="animate-slide-in-left">
               <h2 className="text-3xl font-bold mb-6">
-                Hello, I'm <span className="gradient-text">Divij Modi</span>
+                Hello, I'm <span className="gradient-text">Gati Gupta</span>
               </h2>
               <div className="space-y-4 text-lg text-muted-foreground">
                 <p>
-                  By day, I'm an AI Engineer driven by a deep curiosity for how technology can solve complex problems. I thrive on building robust, scalable applications and exploring the frontiers of Large Language Models. My mind is trained to see patterns, logic, and systems.
+                  I'm a computer science student and developer who enjoys figuring things out — taking
+                  ideas from "what if?" to something that actually runs.
                 </p>
                 <p>
-                  But when I step away from the keyboard, I pick up a camera or a pen. Through photography and writing, I explore the world from a different angle—focusing on emotion, beauty, and the stories hidden in plain sight. This is where I connect with the human side of the equation.
+                  Most of my time goes into writing Python, working on small projects, and picking up
+                  new tools whenever a project demands it. I learn best by building, breaking, and
+                  iterating until something clicks.
                 </p>
                 <p>
-                  I believe these two worlds aren't separate; they're complementary. Engineering taught me how to build, and art taught me why. Both are about observing the world, finding a unique perspective, and creating something meaningful from it.
+                  Beyond the code, I care about doing work that feels honest and well-crafted — the
+                  kind of small details that no one notices when they're right, but everyone feels
+                  when they're off.
                 </p>
               </div>
 
               <div className="flex items-center space-x-6 mt-8 text-sm text-muted-foreground">
-                <div className="flex items-center space-x-2">
-                  <MapPin className="h-4 w-4 text-primary" />
-                  <span>Ahmedabad, India</span>
-                </div>
                 <div className="flex items-center space-x-2">
                   <Clock className="h-4 w-4 text-primary" />
                   <span>Open to new opportunities</span>
@@ -99,35 +97,35 @@ const About = () => {
 
             <Card className="glass border-primary/20 hover-lift">
               <CardHeader>
-                <CardTitle className="gradient-text">My Dual Focus</CardTitle>
+                <CardTitle className="gradient-text">What I'm Into</CardTitle>
               </CardHeader>
               <CardContent>
                 <div className="space-y-4">
                   <div>
                     <h4 className="font-semibold mb-2 flex items-center gap-2">
                       <Code className="h-4 w-4 text-primary" />
-                      AI & Development
+                      Development
                     </h4>
                     <p className="text-sm text-muted-foreground">
-                      Building intelligent, full-stack solutions and exploring the potential of LLMs.
+                      Writing Python, exploring web technologies, and shipping small projects end to end.
                     </p>
                   </div>
                   <div>
                     <h4 className="font-semibold mb-2 flex items-center gap-2">
-                      <Pen className="h-4 w-4 text-primary" />
-                      Writing & Storytelling
+                      <Brain className="h-4 w-4 text-primary" />
+                      Problem Solving
                     </h4>
                     <p className="text-sm text-muted-foreground">
-                      Crafting meaningful quotes and technical articles that inspire and inform.
+                      Breaking down hard problems into smaller, solvable pieces.
                     </p>
                   </div>
                   <div>
                     <h4 className="font-semibold mb-2 flex items-center gap-2">
-                      <Camera className="h-4 w-4 text-primary" />
-                      Photography
+                      <Compass className="h-4 w-4 text-primary" />
+                      Exploration
                     </h4>
                     <p className="text-sm text-muted-foreground">
-                      Capturing fleeting moments and transforming them into lasting visual stories.
+                      Always poking at new domains and tools just to see how they tick.
                     </p>
                   </div>
                 </div>
@@ -145,7 +143,7 @@ const About = () => {
               My Guiding <span className="gradient-text">Principles</span>
             </h2>
             <p className="text-lg text-muted-foreground max-w-2xl mx-auto">
-              The core beliefs that drive my approach to both technology and art.
+              The ideas that shape how I work — on code and everything else.
             </p>
           </div>
 
@@ -153,7 +151,7 @@ const About = () => {
             {values.map((value, index) => {
               const Icon = value.icon;
               return (
-                <Card 
+                <Card
                   key={value.title}
                   className="glass hover-lift border-primary/20 animate-fade-in-up"
                   style={{ animationDelay: `${index * 0.1}s` }}
@@ -180,15 +178,15 @@ const About = () => {
               A Spectrum of <span className="gradient-text">Interests</span>
             </h2>
             <p className="text-lg text-muted-foreground">
-              A few of the topics that fuel my curiosity and passion for learning.
+              A few of the topics that fuel my curiosity.
             </p>
           </div>
 
           <div className="flex flex-wrap gap-3 justify-center">
             {interests.map((interest, index) => (
-              <Badge 
-                key={interest} 
-                variant="secondary" 
+              <Badge
+                key={interest}
+                variant="secondary"
                 className="text-sm py-2 px-4 glass border-primary/20 hover:border-primary/40 transition-all duration-300 animate-fade-in-up"
                 style={{ animationDelay: `${index * 0.05}s` }}
               >
@@ -206,28 +204,22 @@ const About = () => {
             Let's <span className="gradient-text">Connect</span>
           </h2>
           <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-            I'm always open to discussing new ideas, collaborations, or just having a great conversation. Feel free to reach out on the platform that suits you best.
+            Open to ideas, collaborations, and good conversations — find me on the platforms below.
           </p>
-          
-          <div className="grid grid-cols-2 md:grid-cols-4 gap-4 justify-center">
+
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 max-w-md mx-auto">
             <Button variant="hero" size="lg" asChild>
-              <a href="https://www.linkedin.com/in/divij-modi" target="_blank" rel="noopener noreferrer">
+              <a
+                href="https://www.linkedin.com/in/gati-gupta-642280264/"
+                target="_blank"
+                rel="noopener noreferrer"
+              >
                 <Linkedin className="mr-2 h-5 w-5" /> LinkedIn
               </a>
             </Button>
             <Button variant="hero" size="lg" asChild>
-              <a href="https://github.com/Divij-999" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/GatiGupta" target="_blank" rel="noopener noreferrer">
                 <Github className="mr-2 h-5 w-5" /> GitHub
-              </a>
-            </Button>
-            <Button variant="glass" size="lg" asChild>
-              <a href="https://www.instagram.com/obliviate_quotes_forever_03" target="_blank" rel="noopener noreferrer">
-                <Pen className="mr-2 h-5 w-5" /> Quotes
-              </a>
-            </Button>
-            <Button variant="glass" size="lg" asChild>
-              <a href="https://www.instagram.com/obliviate_photography_03" target="_blank" rel="noopener noreferrer">
-                <Camera className="mr-2 h-5 w-5" /> Photos
               </a>
             </Button>
           </div>

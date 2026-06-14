@@ -1,10 +1,10 @@
-# Divij Modi - Personal Portfolio
+# Gati Gupta - Personal Portfolio
 
 Welcome to the official repository for my personal portfolio website.  
 This project showcases my skills, projects, and creative work through a **modern, responsive interface** built with **React** and **Vite**.
 
 ## 🌐 View Live Portfolio 🚀
-[Click here to view the live portfolio](https://divij-999.github.io/portfolio/)
+[Click here to view the live portfolio](https://divij-999.github.io/gati_portfolio/)
 
 ---
 
@@ -51,7 +51,7 @@ Follow these steps to run this project locally:
 
 ### 1. Clone the repository:
 ```bash
-git clone https://github.com/divij-999/portfolio.git
+git clone https://github.com/divij-999/gati_portfolio.git
 cd portfolio
 ```
 

@@ -1,4 +1,4 @@
-# robots.txt for Divij Modi Portfolio
+# robots.txt for Gati Gupta Portfolio
 # Allows all major crawlers and directs them to your sitemap
 
 User-agent: Googlebot
@@ -23,4 +23,4 @@ Disallow: /src/
 Disallow: /public/
 
 # Sitemap locations
-Sitemap: https://divijmodi.tech/sitemap.xml
+Sitemap: https://divij-999.github.io/gati_portfolio/sitemap.xml

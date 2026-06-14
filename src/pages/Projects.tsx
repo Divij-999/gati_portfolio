@@ -38,7 +38,7 @@ const Projects = () => {
     const fetchProjects = async () => {
       try {
         setLoading(true);
-        const response = await fetch('https://api.github.com/users/Divij-999/repos?sort=updated&per_page=100');
+        const response = await fetch('https://api.github.com/users/GatiGupta/repos?sort=updated&per_page=100');
         if (!response.ok) throw new Error('Failed to fetch projects');
 
         const data: GitHubRepo[] = await response.json();
@@ -146,7 +146,7 @@ const Projects = () => {
             My <span className="gradient-text">Projects</span>
           </h1>
           <p className="text-xl text-muted-foreground max-w-3xl mx-auto">
-            A showcase of AI-powered applications, machine learning experiments, and innovative solutions I've been working on.
+            A look at what I've been building and learning on GitHub — pulled live from my profile.
           </p>
         </div>
       </section>
@@ -237,7 +237,7 @@ const Projects = () => {
               <span className="gradient-text">Featured Projects</span>
             </h2>
             <p className="text-lg text-muted-foreground">
-              Highlighted work that showcases my expertise in AI and software development.
+              A few highlighted projects I've been working on.
             </p>
           </div>
 
@@ -302,7 +302,7 @@ const Projects = () => {
               Other <span className="gradient-text">Projects</span>
             </h2>
             <p className="text-lg text-muted-foreground">
-              Additional experiments and learning projects in AI and development.
+              Additional experiments and learning projects.
             </p>
           </div>
 
@@ -363,11 +363,11 @@ const Projects = () => {
             Interested in <span className="gradient-text">Collaborating?</span>
           </h2>
           <p className="text-lg text-muted-foreground mb-8 max-w-2xl mx-auto">
-            I'm always excited to work on innovative AI projects and explore new technologies. Let's build something amazing together!
+            Always up for interesting projects and new ideas. Let's build something together!
           </p>
           <div className="flex flex-col sm:flex-row gap-4 justify-center">
             <Button variant="hero" size="lg" asChild>
-              <a href="https://github.com/Divij-999" target="_blank" rel="noopener noreferrer">
+              <a href="https://github.com/GatiGupta" target="_blank" rel="noopener noreferrer">
                 View All on GitHub <ArrowRight className="ml-2 h-5 w-5" />
               </a>
             </Button>

@@ -1,4 +1,4 @@
-import { Instagram, Mail, Github, Heart ,Linkedin} from "lucide-react";
+import { Github, Heart, Linkedin } from "lucide-react";
 import { Link } from "react-router-dom";
 
 const Footer = () => {
@@ -8,56 +8,28 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-8">
           {/* Brand Section */}
           <div className="col-span-1 md:col-span-2">
-            <h3 className="text-xl font-bold gradient-text mb-4">
-              Divij Modi
-            </h3>
+            <h3 className="text-xl font-bold gradient-text mb-4">Gati Gupta</h3>
             <p className="text-muted-foreground mb-4 max-w-md">
-              Capturing life through words and lenses. A passionate writer and photographer 
-              sharing stories that inspire and images that speak.
+              Developer and computer science student. Building software, exploring ideas, and growing one project at a time.
             </p>
             <div className="flex space-x-4">
               <a
-                href="https://www.instagram.com/obliviate_quotes_forever_03"
+                href="https://github.com/GatiGupta"
                 target="_blank"
                 rel="noopener noreferrer"
                 className="p-2 rounded-lg bg-muted hover:bg-primary hover:text-primary-foreground transition-colors"
-                aria-label="Quotes Instagram"
-              >
-                <Instagram className="h-5 w-5" />
-              </a>
-              <a
-                href="https://www.instagram.com/obliviate_photography_03"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-2 rounded-lg bg-muted hover:bg-secondary hover:text-secondary-foreground transition-colors"
-                aria-label="Photography Instagram"
-              >
-                <Instagram className="h-5 w-5" />
-              </a>
-              <a
-                href="https://github.com/Divij-999"
-                target="_blank"
-                rel="noopener noreferrer"
-                className="p-2 rounded-lg bg-muted hover:bg-accent hover:text-accent-foreground transition-colors"
                 aria-label="GitHub"
               >
                 <Github className="h-5 w-5" />
               </a>
               <a
-                href="https://www.linkedin.com/in/divij-modi"
+                href="https://www.linkedin.com/in/gati-gupta-642280264/"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="p-2 rounded-lg bg-muted hover:bg-accent hover:text-accent-foreground transition-colors"
+                className="p-2 rounded-lg bg-muted hover:bg-primary hover:text-primary-foreground transition-colors"
                 aria-label="LinkedIn"
               >
                 <Linkedin className="h-5 w-5" />
-              </a>
-              <a
-                href="mailto:dmodi2806@gmail.com?subject=Inquiry%20from%20Portfolio&body=Hello%20Divij,"
-                className="p-2 rounded-lg bg-muted hover:bg-ring hover:text-primary-foreground transition-colors"
-                aria-label="Email"
-              >
-                <Mail className="h-5 w-5" />
               </a>
             </div>
           </div>
@@ -82,11 +54,6 @@ const Footer = () => {
                 </Link>
               </li>
               <li>
-                <Link to="/gallery" className="hover:text-primary transition-colors">
-                  Gallery
-                </Link>
-              </li>
-              <li>
                 <Link to="/contact" className="hover:text-primary transition-colors">
                   Contact
                 </Link>
@@ -94,14 +61,14 @@ const Footer = () => {
             </ul>
           </div>
 
-          {/* Services */}
+          {/* Focus Areas */}
           <div>
-            <h4 className="font-semibold mb-4 text-foreground">Services</h4>
+            <h4 className="font-semibold mb-4 text-foreground">Focus</h4>
             <ul className="space-y-2 text-muted-foreground">
-              <li>Creative Writing</li>
-              <li>Photography</li>
-              <li>Content Creation</li>
-              <li>Storytelling</li>
+              <li>Development</li>
+              <li>Python</li>
+              <li>Problem Solving</li>
+              <li>Open Source</li>
             </ul>
           </div>
         </div>
@@ -109,11 +76,11 @@ const Footer = () => {
         {/* Bottom Section */}
         <div className="border-t border-border mt-8 pt-8 flex flex-col md:flex-row justify-between items-center">
           <p className="text-muted-foreground text-sm mb-4 md:mb-0">
-            © {new Date().getFullYear()} Divij Modi. All rights reserved.
+            © {new Date().getFullYear()} Gati Gupta. All rights reserved.
           </p>
           <div className="flex items-center text-muted-foreground text-sm">
             <span>Made with</span>
-            <Heart className="h-4 w-4 mx-1 text-red-500 fill-current" />
+            <Heart className="h-4 w-4 mx-1 text-primary fill-current" />
             <span>using React & Tailwind</span>
           </div>
         </div>

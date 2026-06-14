@@ -1,7 +1,7 @@
 import { useState, useEffect } from "react";
 import { Link, useLocation } from "react-router-dom";
 import { Button } from "@/components/ui/button";
-import { Menu, X, PenTool, User, Camera, Mail, BookOpen,Network } from "lucide-react";
+import { Menu, X, Leaf, User, Mail, Network, Home } from "lucide-react";
 import { ThemeToggle } from "@/components/ThemeToggle";
 
 const Navigation = () => {
@@ -19,10 +19,9 @@ const Navigation = () => {
   }, []);
 
   const navItems = [
-    { path: "/", label: "Home", icon: PenTool },
+    { path: "/", label: "Home", icon: Home },
     { path: "/about", label: "About", icon: User },
-    { path: "/gallery", label: "Gallery", icon: Camera },
-    { path: "/projects", label: "Project", icon: Network },
+    { path: "/projects", label: "Projects", icon: Network },
     { path: "/contact", label: "Contact", icon: Mail },
   ];
 
@@ -35,14 +34,11 @@ const Navigation = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-16">
           {/* Logo */}
-      <Link
-            to="/"
-            className="flex items-center space-x-2 group"
-          >
-            <div className="w-10 h-10 bg-gradient-primary rounded-lg flex items-center justify-center group-hover:shadow-glow transition-all duration-300">
-              <BookOpen className="w-6 h-6 text-primary-foreground" />
-            </div>
-            <span className="font-bold text-xl gradient-text">Divij Modi</span>
+          <Link to="/" className="flex items-center space-x-2 group">
+            {/* <div className="w-10 h-10 bg-gradient-primary rounded-lg flex items-center justify-center group-hover:shadow-glow transition-all duration-300">
+              <Leaf className="w-6 h-6 text-primary-foreground" />
+            </div> */}
+            <span className="font-bold text-xl gradient-text">Gati Gupta</span>
           </Link>
 
           {/* Desktop Navigation */}
@@ -52,7 +48,7 @@ const Navigation = () => {
               const isActive = location.pathname === item.path;
               return (
                 <Link
-                key={item.path}
+                  key={item.path}
                   to={item.path}
                   className={`flex items-center space-x-1 px-3 py-2 rounded-md text-sm font-medium transition-all duration-300 ${
                     isActive
@@ -67,12 +63,12 @@ const Navigation = () => {
             })}
             <ThemeToggle />
             <Button variant="hero" size="sm" asChild>
-              <a 
-                href="https://www.linkedin.com/in/divij-modi/" 
-                target="_blank" 
+              <a
+                href="https://www.linkedin.com/in/gati-gupta-642280264/"
+                target="_blank"
                 rel="noopener noreferrer"
               >
-                Follow My Work
+                Connect on LinkedIn
               </a>
             </Button>
           </div>
@@ -111,20 +107,17 @@ const Navigation = () => {
                   </Link>
                 );
               })}
-              
-              {/* <div className="pt-2 border-t border-border/20"> */}
-              <div className="flex items-center justify-between mb-3">
 
-              <ThemeToggle />
-                {/* <Button variant="hero" className="w-full" asChild> */}
+              <div className="flex items-center justify-between mb-3 pt-2">
+                <ThemeToggle />
                 <Button variant="hero" size="sm" asChild>
-                  <a 
-                    href="https://www.linkedin.com/in/divij-modi/" 
-                    target="_blank" 
+                  <a
+                    href="https://www.linkedin.com/in/gati-gupta-642280264/"
+                    target="_blank"
                     rel="noopener noreferrer"
                     onClick={() => setIsOpen(false)}
                   >
-                    Follow My Work
+                    Connect on LinkedIn
                   </a>
                 </Button>
               </div>
