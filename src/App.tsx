@@ -107,7 +107,7 @@ const App = () => (
     <QueryClientProvider client={queryClient}>
       <ThemeProvider defaultTheme="dark" storageKey="portfolio-theme">
         <TooltipProvider>
-          <BrowserRouter>
+          <BrowserRouter basename="/gati_portfolio">
             <Toaster />
             <Sonner />
             <AppContent />
