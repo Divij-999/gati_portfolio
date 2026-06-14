@@ -1,0 +1,26 @@
+# robots.txt for Divij Modi Portfolio
+# Allows all major crawlers and directs them to your sitemap
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: Twitterbot
+Allow: /
+
+User-agent: facebookexternalhit
+Allow: /
+
+# Default rule for all other crawlers
+User-agent: *
+Allow: /
+
+# Disallow internal or development folders
+Disallow: /node_modules/
+Disallow: /src/
+Disallow: /public/
+
+# Sitemap locations
+Sitemap: https://divijmodi.tech/sitemap.xml
